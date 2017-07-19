@@ -1,0 +1,43 @@
+{
+  "name": "carousel",
+  "description": "A tiny, highly accessible, easily customizable carousel",
+  "version": "0.1.0",
+  "main": "carousel.js",
+  "scripts": {
+    "clean": "git clean -X -d -f",
+    "start": "gulp --cwd . --gulpfile node_modules/gulp-config-dev",
+    "test": "echo 'Running tests...'; npm run test:css && npm run test:js",
+    "test:css": "stylelint --syntax scss *.css placeholders/*.css",
+    "test:js": "eslint *.js placeholders/*.js --cache --ignore-pattern .gitignore"
+  },
+  "browserslist": [
+    "ie 11",
+    "last 2 android versions",
+    "last 2 chrome versions",
+    "last 2 edge versions",
+    "last 2 firefox versions",
+    "last 2 ios versions",
+    "last 2 safari versions"
+  ],
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-dev": "^2.0.0",
+    "gulp-config-dev": "^3.9.1",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^8.0.0",
+    "stylelint-config-dev": "^2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "dev"
+  },
+  "gulpConfig": {
+    "css": false,
+    "html": false,
+    "js-dest": "carousel.js",
+    "js-module-name": "Carousel"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-dev"
+  },
+  "private": true
+}

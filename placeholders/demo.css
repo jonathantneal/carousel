@@ -1,0 +1,86 @@
+html {
+	font: 100%/2.5 "Segoe", "Helvetica Neue", "Roboto", sans-serif;
+}
+
+body {
+	margin: 2.5%;
+	text-align: center;
+}
+
+h1 {
+	line-height: 1;
+	margin: 0 0 .25em;
+}
+
+.gallery {
+	display: inline-flex;
+	list-style-type: none;
+	margin: 0 0 2em;
+	max-width: 50em;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+.gallery > li {
+	flex-basis: 100%;
+}
+
+.gallery > li[aria-hidden] {
+	display: none;
+}
+
+.gallery > button {
+	background-color: #eeeeee;
+	border: none;
+	color: #222222;
+	font: 700 75%/1 sans-serif;
+	margin: 0;
+	padding: .5em .75em;
+}
+
+.gallery > button:active {
+	background-color: #99ccff;
+}
+
+.gallery > nav {
+	bottom: -2.5em;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+}
+
+.gallery > nav button {
+	background-color: #eeeeee;
+	border: none;
+	color: #222222;
+	font: 700 75%/1 sans-serif;
+	margin: .25em;
+	padding: .5em .75em;
+}
+
+.gallery > nav [aria-current="true"] {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.gallery figure {
+	margin: 0 1em 2em;
+}
+
+.gallery figure span {
+	display: block;
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.gallery figure span img {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}

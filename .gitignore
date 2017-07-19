@@ -1,0 +1,7 @@
+dist
+node_modules
+.*
+!.appveyor.yml
+!.gitignore
+!.travis.yml
+*.log*
